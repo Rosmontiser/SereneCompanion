@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="line_color">#e7e7e7</color>
+    <color name="content_background">#f2f2f2</color>
+    <color name="solar_background">#009988</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+
+    <color name="soft_pink">#FFF0F5</color>
+    <color name="dark_pink">#FF69B4</color>
+    <color name="pink_stroke">#FFB6C1</color>
+    <color name="soft_yellow">#FFFACD</color>
+    <color name="dark_yellow">#FFD700</color>
+    <color name="yellow_stroke">#FFEC8B</color>
+    <color name="golden_icon">#FFD700</color>
+    <color name="pink_icon">#FF69B4</color>
+</resources>

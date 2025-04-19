@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <!--当前月显示的视图-->
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/current_month_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#FF111111"
+        android:textSize="16dp"
+        tools:text="2021-10-21" />
+
+    <!--月视图容器, 必须-->
+    <FrameLayout
+        android:id="@+id/month_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--预览专用-->
+        <!--<com.haibin.calendarview.PreviewMonthView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="SpeakableTextPresentCheck" />-->
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cfcfcf" />
+
+</LinearLayout>

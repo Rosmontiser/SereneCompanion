@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.haibin.calendarviewproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute">
+        <receiver
+            android:name=".DailyUpdateReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".ClickAppWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/click_app_widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".meizu.MeiZuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".multi.MultiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".index.IndexActivity"
+            android:exported="true" />
+        <activity
+            android:name=".simple.SimpleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".range.RangeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".colorful.ColorfulActivity"
+            android:exported="true" />
+        <activity
+            android:name=".solay.SolarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".single.SingleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".progress.ProgressActivity"
+            android:exported="true" />
+        <activity
+            android:name=".custom.CustomActivity"
+            android:exported="true" />
+        <activity
+            android:name=".mix.MixActivity"
+            android:exported="true" />
+        <activity
+            android:name=".pager.ViewPagerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".full.FullActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TestActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".VerticalActivity"
+            android:exported="true" />
+        <activity
+            android:name=".mark.SimpleMarkActivity"
+            android:exported="true" />
+        <activity
+            android:name=".mark.SimpleMarkActivity2"
+            android:exported="true" />
+    </application>
+
+</manifest>
